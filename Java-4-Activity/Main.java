@@ -16,8 +16,7 @@ class Main {
    int people = 32;
    int items = 12; 
    System.out.println(age);
-   System.out.println(people);
-   System.out.println(items);
+   System.out.println("Student is " + age +" years old");
 /*  Challenge 2:
     1) temperature 
     2) student's GPA
@@ -26,7 +25,7 @@ class Main {
     float temp = 32.5f; 
     float grade = 4.0f; 
     float rate = 3.5f; 
-
+    System.out.println("The temperature is " temp);
 
 /*  Challenge 3:
     1) Student's last name 
@@ -36,7 +35,7 @@ class Main {
     String lname = "Smith"; 
     char finitial = 'a';
     String desc = "20 lbs, gray, useful";  
-
+    System.out.println("The item is" + desc);
 /*  Challenge 4:
     1) the status whether lights are on
     2) the status whether the game is over
