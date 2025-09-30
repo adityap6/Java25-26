@@ -19,24 +19,31 @@ class Main {
       System.out.println("Value of y is "+y);   
   
 //    Challenge 2:  See file Actvy7_Eq2
-double A = 3;
-double B = 2;  
+System.out.println("Enter the value for A");
+double A = Input.readDouble();
+System.out.println("Enter the value for B ");
+double B = Input.readDouble();  
 double C = Math.sqrt(A+B);
 System.out.println(C);
 //    Challenge 3:  See file Actvy7_Eq3
-double z = 3; 
+double z = Input.readDouble(); 
 double q = Math.pow(z, 3)+5;
 System.out.println(q);
   
 //    Challenge 4:  See file Actvy7_Eq4
-double m = 3; 
-double n =2; 
+System.out.println("Enter the value for m ");
+double m = Input.readDouble();
+System.out.println("Enter the value for n ");
+double n =Input.readDouble();
 double k = Math.pow(m,5)/Math.sqrt(n+1);
 System.out.println(k); 
 
 //    Challenge 5:  See file Actvy7_Eq5
-  double r = 4; 
-  double t =6;
+  System.out.println("Enter the value for r ");
+  double r = Input.readDouble(); 
+  System.out.println("Enter the value for t ");
+  double t = Input.readDouble();
+  System.out.println("Enter the value for s ");
   double s = Math.pow(t,5)*Math.pow(r+2, 4);
   System.out.println(s);
 //    Challenge 6:  See file Actvy7_Eq6
