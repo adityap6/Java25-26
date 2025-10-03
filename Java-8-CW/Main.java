@@ -16,7 +16,4 @@ double areaSquare(double side){
     double unit = areaSquare(3);
     System.out.println(unit);
   }
-
- 
-  
 }
