@@ -6,7 +6,7 @@ class Main {
   void init(){
    // Invoke functions with appropriate arguments
    System.out.println(gpa(91));
-   System.out.println(isGraduating("Senior",44));
+   System.out.println(isGraduating(12,44));
    System.out.println(BMI(150,67));
    System.out.println(shippingCost(20));
    System.out.println(blueOrViolet(650));
@@ -34,8 +34,8 @@ double gpa(double gpa){
   In the init() function:
   Display to console "Student Graduating" or "Student NOT Graduating" depending on the value returned by the function.
 */
-boolean isGraduating(String grade, double credits){
-  if(grade == "Senior"&& credits >=44){
+boolean isGraduating(int g, int c){
+  if(g == 12 && c >=44){
     return true;
   }else{
     return false;
@@ -52,8 +52,8 @@ boolean isGraduating(String grade, double credits){
     BMI of 40.0 or more:  return  Obese 
     formula: BMI = (pounds/(inches)^2)*703
 */
-String BMI(double weight, double height){
-  double BMI = (weight/Math.pow(height,2))*703;
+String BMI(double w, double h){
+  double BMI = (w/Math.pow(h,2))*703;
   if(BMI<=18.4){
     return "Underweight";
   }else if(BMI>18.4&&BMI<25.0){
@@ -74,15 +74,15 @@ String BMI(double weight, double height){
        10.00, if more than 15 pounds but 25 pounds or less,
        10.00 plus 2 cents per pound over 25 pounds, if over 25 pounds.
 */
-double shippingCost(double weight){
-  if(weight<=10){
+double shippingCost(double w){
+  if(w<=10){
     return 0.00;
-  }else if(weight>10&&weight<=15){
+  }else if(w>10&&w<=15){
     return 5.00;
-  }else if(weight>15&&weight<=25){
+  }else if(w>15&&w<=25){
     return 10.00;
-  }else if(weight>25){
-    return 10+weight*0.02;
+  }else if(w>25){
+    return 10+w*0.02;
   }else{
     return 0;
   }
